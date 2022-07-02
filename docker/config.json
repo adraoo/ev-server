@@ -62,13 +62,16 @@
     "debug": false
   },
   "WSDLEndpoint": {
-    "baseUrl": "http://server:8000"
+    "baseUrl": "http://server:8000",
+    "baseSecureUrl":"http://server:8000"
   },
   "JsonEndpoint": {
-    "baseUrl": "ws://server:8010"
+    "baseUrl": "ws://server:8010",
+    "baseSecureUrl":"ws://server:8010"
   },
   "OCPIEndpoint": {
-    "baseUrl": "http://server:9090"
+    "baseUrl": "http://server:9090",
+    "baseSecureUrl":"http://server:9090"
   },
   "AsyncTask": {
     "active": true,
@@ -76,7 +79,7 @@
   },
   "Storage": {
     "implementation": "mongodb",
-    "uri": null,
+    "uri": "mongodb://evse-user:evse-user-pwd@mongodb:27017/evse?readPreference=secondaryPreferred",
     "host": "mongodb",
     "port": 27017,
     "user": "evse-user",
